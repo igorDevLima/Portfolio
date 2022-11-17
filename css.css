@@ -2,50 +2,67 @@
     padding: 0;
     margin: 0;
     font-family: 'Noto Sans', sans-serif;
+    font-size: 23px;
+
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
 
 }
 
 img {
-    width: 100px;
-    background-color: aqua;
-
+    border: 1px solid #000000;
+    border-radius: 100px;
 }
+
 
 h1 {
     margin: 30px;
 }
 
-.conteiner {
+.container {
+    width: 100vw;
     height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(https://img.freepik.com/fotos-gratis/plano-de-fundo-texturizado-com-pincelada-bege_53876-129531.jpg?w=900&t=st=1668532140~exp=1668532740~hmac=aea8e3ec1441a475415e73f62bc655548c111add062307d75c5be78dcf9783ae);
+
     display: grid;
     flex-direction: column;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 7fr 50px;
-
-
+    grid-template-areas: "h h"
+        "m m"
+        "f f";
+    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 50px 4fr 40px;
 }
 
 header {
-    background-color: rgb(255, 68, 0);
-    height: 60px;
+    background-color: #f2511b;
+
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
     border-bottom: 2px solid;
-    position: static;
-    align-items: center;
+    align-items: flex-start;
+    grid-area: h;
 
 
 
 }
 
 header a {
+    height: 50px;
+    background-color: antiquewhite;
     color: black;
     text-decoration: none;
     font-size: 23px;
     margin-right: 15px;
+    border: 1px solid black;
 }
 
 header a:hover {
@@ -60,66 +77,35 @@ header div:nth-child(2) {
 }
 
 main {
-    font-size: 30px;
-    background-color: white;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url(https://img.freepik.com/fotos-gratis/plano-de-fundo-texturizado-com-pincelada-bege_53876-129531.jpg?w=900&t=st=1668532140~exp=1668532740~hmac=aea8e3ec1441a475415e73f62bc655548c111add062307d75c5be78dcf9783ae);
-
-
-}
-
-
-
-.curriculo {
-
-    display: flex;
-    flex-direction: column;
-    border-top: solid 2px #f2511b;
-    background-color: rgb(0, 0, 0);
-}
-
-.curriculo div:nth-child(1) {
     color: white;
+    background-color: #000000;
     display: flex;
-    flex-direction: row;
-
-}
-
-.links {
-
-    color: #f2511b;
-    align-items: center;
-    align-self: center;
-    margin-bottom: 10px;
-}
-
-ion-icon {
-    font-size: 100px;
-    color: #f2511b;
-}
-
-ion-icon::before {
-
-    position: absolute;
-    top: 120%;
-
+    flex-wrap: wrap;
+    flex-direction: column;
 
 }
 
 .portfolio {
+    color: rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
-
     align-content: center;
     justify-content: center;
     border-top: solid 2px #f2511b;
+    align-content: center;
+
+    background-color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(https://img.freepik.com/fotos-gratis/plano-de-fundo-texturizado-com-pincelada-bege_53876-129531.jpg?w=900&t=st=1668532140~exp=1668532740~hmac=aea8e3ec1441a475415e73f62bc655548c111add062307d75c5be78dcf9783ae);
 }
 
 .portfolio ul {
     display: flex;
     flex-wrap: wrap;
     align-self: center;
+    align-content: center;
+    justify-content: center;
 }
 
 .portfolio li {
@@ -130,6 +116,7 @@ ion-icon::before {
     flex-wrap: wrap;
     margin: 10px;
     align-items: center;
+
 }
 
 .portfolio img {
@@ -137,9 +124,23 @@ ion-icon::before {
     width: 180px;
     border-radius: 20%;
 
+
 }
+
 
 footer {
     border-top: solid 2px black;
     background-color: #f2511b;
+
+    grid-area: f;
+}
+
+@media only screen and (max-width: 480px) {
+    header p {
+        display: none;
+    }
+
+    header {
+        justify-content: space-around;
+    }
 }
