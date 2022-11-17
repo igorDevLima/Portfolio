@@ -3,20 +3,29 @@
     margin: 0;
     font-family: 'Noto Sans', sans-serif;
     font-size: 23px;
+   
 
 }
+body, html {
+    overflow-x: hidden !important;
+    }
 
 body {
     width: 100vw;
     height: 100vh;
     background-color: white;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 
 }
 
 img {
-    border: 1px solid #000000;
+   
+    box-shadow: 0px 0px 10px #f2511b, 0px 0px 5px #f2511b inset;
+    border: 1px solid #f2511b;
     border-radius: 100px;
 }
+
 
 
 h1 {
@@ -36,39 +45,42 @@ h1 {
     font-family: 'Titillium Web', sans-serif;
     font-size: 50px;
     
-    box-shadow: 0px 0px 10px rgb(207, 203, 203), 0px 0px 5px rgb(255, 255, 255) inset;
+    
     text-shadow: 0px 0px 5px #f2511b, 0px 0px 3px rgb(161, 47, 5);
    /* text-shadow: 0 0 10px #f2511b, 0 0 40px #f2511b, 0 0 70px #f2511b;*/
 }
+main h3{
+    color:#f2511b;
+    font-size: 60px;
+    margin-bottom:10px ;
+    margin-top: 70px;
+    
+}
+
+
 
 .container {
     width: 100vw;
     height: 100vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url(https://img.freepik.com/fotos-gratis/plano-de-fundo-texturizado-com-pincelada-bege_53876-129531.jpg?w=900&t=st=1668532140~exp=1668532740~hmac=aea8e3ec1441a475415e73f62bc655548c111add062307d75c5be78dcf9783ae);
-
     display: grid;
-    flex-direction: column;
     grid-template-areas: "h h"
         "m m"
         "f f";
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr ;
     grid-template-rows: 50px 4fr 40px;
 }
 
 header {
+   
     background-color: #f2511b;
-
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 10px;
     border-bottom: 2px solid;
     align-items: flex-start;
     grid-area: h;
-    border: 2px solid #000000;
     
 
 
@@ -96,15 +108,83 @@ header div:nth-child(2) {
 }
 
 main {
+   margin: 0 auto;
     color: white;
     background-color: #000000;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    justify-content: center;
+    align-content: center;
 
 }
+.curriculo{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-top: 100px;
+}
+.contents{
+    padding-top: 20px;
+   width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-items:center ;
+    align-content: center;
+    align-items: center;
+}
+.contents div:nth-child(2){
+    margin-right: 100px;
+}
 
+.contents div{
+  
+  
+    display: flex;
+   
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+.contents h1{
+    font-size: 40px ;
+     
+ }
+
+
+
+.main-content{
+
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    
+   
+    text-align: left;
+}
+.sobre{
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-self: center;
+    text-align: left;
+}
 .portfolio {
+    
     padding: 100px;
     color: #f2511b;
     display: flex;
@@ -112,14 +192,16 @@ main {
     align-content: center;
     justify-content: center;
     border-top: solid 2px #f2511b;
+    align-items: center;
     align-content: center;
-    box-shadow: 0px 0px 10px rgb(207, 203, 203), 0px 0px 5px rgb(255, 255, 255) inset;
+    box-shadow: 0px 0px 10px #f2511b, 0px 0px 5px #f2511b inset;
     
     background-color: rgb(0, 0, 0);
 
 }
 
 .portfolio ul {
+    margin-top: 60px;
     display: flex;
     flex-wrap: wrap;
     align-self: center;
@@ -146,16 +228,18 @@ main {
     height: 120px;
     width: 180px;
     border-radius: 20%;
+    box-shadow: 0px 0px 10px #f2511b, 0px 0px 5px #f2511b inset;
+   
    
 }
-.portfolio a{
-    box-shadow: 0px 0px 10px rgb(207, 203, 203), 0px 0px 5px rgb(255, 255, 255) inset;
-    text-shadow: 0px 0px 5px #f2511b, 0px 0px 3px rgb(161, 47, 5);
-}
+
 
 
 footer {
-    border-top: solid 2px black;
+    display: flex;
+    justify-content: space-around;
+    font-size: 9px;
+    border-top: solid 2px #f2511b;
     background-color: #f2511b;
 
     grid-area: f;
@@ -178,5 +262,10 @@ footer {
 
     header {
         justify-content: space-around;
+    }
+}
+@media only screen and (max-width: 620px) {
+    .contents{
+        flex-direction: column;
     }
 }
