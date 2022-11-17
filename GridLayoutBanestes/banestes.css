@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Whitney HTF';
+font-weight: 500;
+}
+
+body {
+    background-color: #e3e3e3;
+}
+
+.conteiner {
+
+
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 12vh 70vh 0vh;
+    grid-template-areas: "h h"
+        "m m"
+        " f f";
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+    height: 100px;
+    align-items: center;
+    background-color: #073d6f;
+    grid-area: h;
+}
+
+header div:nth-child(2) {
+
+    color: #fff;
+}
+
+main {
+    margin-top: 70px;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "";
+    width: 700px;
+    height: 300px;
+    background-color: #f5f5f5;
+    grid-area: m;
+    padding: 30px;
+    gap: 30px 30px;
+    border-radius: 5px;
+}
+
+main div:nth-child(1) {
+
+    background-color: #e3e3e3;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 10px
+}
+
+button {
+    cursor: pointer;
+    background-color: #f7f7f7;
+    width: 40px;
+    height: 30px;
+    border-radius: 2px;
+    border: 0.1em solid #cccccc;
+    border-bottom: 0.1em solid #fff;
+    box-shadow: 0px 4px #cccccc;
+}
+
+main div:nth-child(2) {
+    background-color: #e3e3e3;
+    border-radius: 5px;
+    border: 2px dotted #cccccc;
+    display: flex;
+    margin: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+
+
+}
+input{
+    margin: 10px;
+}
+
+ form button  {
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #188900;
+    width: 70px;
+    height: 40px;
+    border-radius: 5px;
+    box-shadow: 0px 4px #137900;
+}
+.conta{
+    color: #bebebe;
+    border-radius: 5px;
+    border: 1px solid #cccccc ;
+    width: 300px;
+padding:10px ;
+height: 20px;
+}
+#senha{
+    color: #bebebe;
+    border-radius: 5px;
+    border: 1px solid #cccccc ;
+    width: 200px;
+padding:10px ;
+height: 20px;
+}
+
+main div:nth-child(3) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+font-size: 13px;
+    
+    height: 80px;
+}
+a{
+    text-decoration: none;
+    color: #073d6f;
+}
+
+main div:nth-child(4) {
+    padding: 10px;
+    text-align: center;
+    font-size: 13px;
+    width: 230px;
+    color: #3c763d;
+    background-color: #dff0d8;
+    height: 50px;
+    border-radius: 4px;
+    justify-self: end;
+}
+
+ion-icon {
+    color: #3c763d;
+    size: 70px;
+}
+
+
+footer {
+
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0px;
+    padding: 10px 50px;
+    height: 100px;
+    align-items: center;
+    background-color: #073d6f;
+    grid-area: f;
+}
+
+footer div:nth-child(2) {
+    color: #79bde9;
+}

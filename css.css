@@ -86,7 +86,8 @@ main {
 }
 
 .portfolio {
-    color: rgb(0, 0, 0);
+    padding: 100px;
+    color: #f2511b;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -94,10 +95,8 @@ main {
     border-top: solid 2px #f2511b;
     align-content: center;
 
-    background-color: white;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url(https://img.freepik.com/fotos-gratis/plano-de-fundo-texturizado-com-pincelada-bege_53876-129531.jpg?w=900&t=st=1668532140~exp=1668532740~hmac=aea8e3ec1441a475415e73f62bc655548c111add062307d75c5be78dcf9783ae);
+    background-color: rgb(0, 0, 0);
+
 }
 
 .portfolio ul {
@@ -120,7 +119,8 @@ main {
 }
 
 .portfolio img {
-    border: solid 2px #f2511b;
+    border: 2px solid #f2511b;
+    height: 120px;
     width: 180px;
     border-radius: 20%;
 
@@ -138,6 +138,15 @@ footer {
 @media only screen and (max-width: 480px) {
     header p {
         display: none;
+    }
+
+    header {
+        justify-content: space-around;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .portfolio a {
+        margin-top: 40px;
     }
 
     header {
