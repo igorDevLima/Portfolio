@@ -6,13 +6,24 @@
 
 
 }
+@media print{
+    body,html{
+        margin: 0;
+        padding: 0;
+
+    }
+    header{
+        display: none;
+    }
+}
 
 body,
 html {
     overflow-x: hidden !important;
     scroll-behavior: smooth;
 }
-a{
+
+a {
     text-decoration: none;
 }
 
@@ -60,7 +71,7 @@ main h3 {
     color: #ff640c;
     font-size: 60px;
     margin-bottom: 10px;
-    margin-top: 70px;
+    margin-top: 50px;
 
 }
 
@@ -94,7 +105,7 @@ header {
 
 }
 
-header a {
+header a,#print{
     width: 120px;
     height: 30px;
     text-align: center;
@@ -110,8 +121,29 @@ header a {
 
     border: 1px solid black;
 }
+#print{
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    padding-top: 3px;
+    position: relative;
+    border-radius: 2px;
+    background-color: #111;
+    color: rgb(73, 69, 69);
+    border: 1px solid #ff640c;
+    text-decoration: none;
+    font-size: 17px;
 
-header a:hover {
+    text-transform: uppercase;
+
+    
+}
+ 
+
+header a:hover,
+#print:hover {
     background: linear-gradient(90deg, #ff640c, #f16100, rgb(221, 74, 5), #e7630bea);
     background-size: 400%;
     color: rgb(0, 0, 0);
@@ -119,7 +151,8 @@ header a:hover {
 
 }
 
-header a:before {
+header a:before,
+#print:before {
     content: ' ';
     position: absolute;
     background: inherit;
@@ -130,28 +163,34 @@ header a:before {
     border-radius: 20px;
     filter: blur(20px);
     opacity: 0;
-    transition: opacity 0.5s ;
+    transition: opacity 0.5s;
 }
-header a:hover:before {
-    
+
+header a:hover:before,
+#print:before {
+
     opacity: 1;
-    z-index:-1;
+    z-index: -1;
 }
-header a:hover{
-    z-index:1;
+
+header a:hover,#print:hover {
+    z-index: 1;
     animation: glow 8s linear infinite;
 }
-@keyframes glow{
-    0%{
+
+@keyframes glow {
+    0% {
         background-position: 0%;
     }
-    100%{
+
+    100% {
         background-position: 400%;
     }
 }
-ion-icon{
-    
-    
+
+ion-icon {
+
+
     width: 100px;
     height: 100px;
     color: #ff640c;
