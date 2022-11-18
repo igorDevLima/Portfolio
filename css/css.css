@@ -10,8 +10,20 @@
 
 body,
 html {
+
     overflow-x: hidden !important;
     scroll-behavior: smooth;
+
+
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+
 }
 
 a {
@@ -32,31 +44,6 @@ a {
     font-family: 'Titillium Web', sans-serif;
     text-decoration: none;
 }
-
-body {
-    width: 100vw;
-    height: 100vh;
-    background-color: white;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-
-}
-
-.main-content div {
-
-
-    width: 76%;
-}
-
-
-.begin img {
-
-    box-shadow: 0px 0px 10px #ff640c, 0px 0px 5px #ff640c inset;
-    border: 1px solid #ff640c;
-    border-radius: 100px;
-}
-
-
 
 h1 {
     color: #ff640c;
@@ -120,8 +107,10 @@ header {
 
 }
 
+
 header a,
 #print {
+
     width: 120px;
     height: 30px;
     text-align: center;
@@ -137,6 +126,21 @@ header a,
 
     border: 1px solid black;
 }
+
+.begin img {
+
+    box-shadow: 0px 0px 10px #ff640c, 0px 0px 5px #ff640c inset;
+    border: 1px solid #ff640c;
+    border-radius: 100px;
+}
+
+
+.main-content div {
+
+
+    width: 76%;
+}
+
 
 #print {
     margin-top: 60px;
@@ -369,6 +373,16 @@ main {
     text-align: left;
 }
 
+.main-content li {
+
+    margin-top: 20px;
+}
+
+.main-content h4 {
+    color: #ff640c;
+    margin-top: 20px;
+}
+
 .sobre {
 
     display: flex;
@@ -412,15 +426,77 @@ footer {
     grid-area: f;
 }
 
-@media only screen and (max-width: 480px) {
-    header p {
-        display: none;
-    }
 
-    header {
-        justify-content: space-around;
-    }
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+
 }
+
+a {
+    font-family: 'Heebo', sans-serif;
+
+    font-family: 'Josefin Sans', sans-serif;
+
+    font-family: 'Major Mono Display', monospace;
+
+    font-family: 'Manrope', sans-serif;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-family: 'Mukta', sans-serif;
+
+    font-family: 'Noto Sans', sans-serif;
+
+    font-family: 'Titillium Web', sans-serif;
+    text-decoration: none;
+}
+
+h1 {
+    color: #ff640c;
+    font-family: 'Heebo', sans-serif;
+
+    font-family: 'Major Mono Display', monospace;
+
+    font-family: 'Manrope', sans-serif;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-family: 'Mukta', sans-serif;
+
+    font-family: 'Noto Sans', sans-serif;
+
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+
+
+    text-shadow: 0px 0px 5px #ff640c, 0px 0px 3px rgb(161, 47, 5);
+    /* text-shadow: 0 0 10px #ff640c, 0 0 40px #ff640c, 0 0 70px #ff640c;*/
+}
+
+main h3 {
+
+    width: max-content;
+    color: #ff640c;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 50px;
+
+}
+
+.curriculo {
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+
+
+
 
 @media only screen and (max-width: 600px) {
     .portfolio a {
@@ -430,6 +506,7 @@ footer {
     header {
         justify-content: space-around;
     }
+
 }
 
 @media only screen and (max-width: 720px) {
@@ -440,11 +517,69 @@ footer {
 
     }
 
-    .contents div:nth-child(2) {
-        margin-right: 0;
+
+
+}
+
+@media only screen and (max-width: 480px) {
+    footer p {
+        font-size: 17px;
+        align-self: center;
     }
 
+}
+
+.contents div:nth-child(2) {
+    margin-right: 0;
+}
+
+.curriculo {
+    align-items: center;
+}
+
+
+@media only screen and (max-width: 410px) {
+    header {
+        justify-content: center;
+    }
+
+    header a {
+        display: none;
+
+    }
+
+    .begin h2 {
+        font-size: 26px;
+    }
+
+    .begin p {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    main {
+        justify-content: flex-start;
+    }
+}
+
+@media only screen and (max-width:350px) {
     .curriculo {
-        align-items: center;
+        text-align: left;
+        
+        width: 100%;
+    }
+
+    .begin {
+        align-items: left;
+        text-align: center;
+        background-image:none;
+    }
+    .begin h2 {
+        font-size: 16px;
+    }
+
+    .begin p {
+        font-size: 12px;
     }
 }

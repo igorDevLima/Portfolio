@@ -11,45 +11,29 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Heebo:wght@647&family=Montserrat:wght@200&family=Noto+Sans:wght@100;400;500;700&display=swap"
         rel="stylesheet">
-    <title>Currículo com BootStrap - Igor Lima Pereira.</title>
+    <title>Versão de impressão - Igor Lima Pereira.</title>
 </head>
 
 <body>
-    <div id="conteiner">
-        <div id="header">
-            <div class="mainnav">
-                <nav>
-                    <ul>
-                        <li><a href="#co">COMPETÊNCIAS</a></li>
-                        <li><a href="#ex">EXPERIÊNCIA</a></li>
-                        <li><a href="#fo">FORMAÇÃO</a></li>
-                        <li><a href="#ob">OBJETIVOS</a></li>
-                        <li><a href="#df">DIFICULDADES</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="button">
-                <button class="button-print">
-                    <ion-icon name="print-outline" size="large" padding=2px;></ion-icon>
-                </button>
-                <script src="print.js">
-                    
-                </script>
-            </div>
-            <div class="search-box">
-                <input type="text" class="search-text" placeholder="Buscar palavras chaves">
-                <label for="search-text" class="icon">
-                    <ion-icon name="search-outline"></ion-icon>
-                </label>
-            </div>
-        </div>
-        <div id="contents">
+    <div id="container">
+       <!--<header >-->
+
+
+            <button onclick="print()" class="button-print">
+                <ion-icon name="print-outline" size="large" padding=2px;></ion-icon>
+
+            </button>
+
+
+
+        <!--</header>-->
+        <div id="print">
 
             <div class="nome">
                 <h1><b>Igor Lima</b></h1>
                 <h1><b>Pereira</b></h1>
                 <h2>Estudante</h2>
-                <img src="profile-pic.png" alt="Minha foto" width="150px">
+                <img src="/img/profile-pic.png" alt="Minha foto" width="150px">
             </div>
             <div class="info">
                 <h3><b>Igor Lima Pereira </b></h3>
@@ -60,100 +44,108 @@
                 <p class="laranja">
 
                 <p>(27) 99731-7545</p>
-                <p> igorlimadrum@gmali.com</p>
+                <p> igorlimadrum@gdiv.com</p>
 
                 <b> Instagram:</b> <a href="https://www.instagram.com/igor_limap/" target="_blank">igor_limap</a>
                 <b> LinkedIn:</b> <a
                     href="https://www.linkedin.com/in/igor-lima-pereira-3b2b721b0?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bx4yOU9GIRGKSz6dtpT11Yg%3D%3D"
                     target="_blank">linkedin.com/in/igor-lima-pereira-3b2b721b0</a>
                 </p>
+                <b> GitHub:</b> <a href="https://github.com/igorDevLima" target="_blank">igorDevLima</a>
+                </p>
 
+            </div>
+            <div class="sobre">
+                <div>
+                    <h3><b>Sobre</b></h3>
+                </div>
+                <div>
+                    <p>Sou um estudante de tecnologia que busca melhorar meus conhecimentos e
+                        habilidades. Sou
+                        natural de São Gabriel da Palha mas moro em Braço do Rio para poder ficar div
+                        próximo
+                        aos meus estudos. Sou bolsista na Univc e estudante aprovado no Ifes, ambos sendo
+                        cursos de tecnologia. Gosto de todas as areas da computação, em especial a area de
+                        software.
+                        Busco me especializar em desenvolvimento web junto à uma empresa que agregue em
+                        conhecimento e experiênica. </p>
+                </div>
             </div>
 
             <div class="curriculo">
-                <div class="sobre">
 
-                    <div class="sobre">
-                        <div>
-                            <h3><b>Sobre</b></h3>
-                        </div>
-                        <div>
-                            <p>Sou um estudante de tecnologia que busca melhorar meus conhecimentos e habilidades. Sou
-                                natural de São Gabriel da Palha, mas moro em Braço do Rio para poder ficar mais próximos
-                                dos meus estudos. Sou bolsista na Univc, e estudante aprovado no Ifes. Conheço muito bem
-                                a faculdade, dos laboratórios até a biblioteca.
-                                Sempre adorei estudar na Univc e estou entusiasmado em começar essa nova jornada. </p>
-                        </div>
-                    </div>
+                <div>
+                    <h3><b>Competências</b></h3>
+                    <ul>
+                        <li>Inglês intermediário(leitura);</li>
+                        <li>Computação avançada;</li>
+                        <li>Domínio da lógica de programação;</li>
+                        <li>Facliidade para resolução de problemas;</li>
+                        <li>Conhecimento intermediário de linguagens de programação (Java/C) e orientada a
+                            objetos;</li>
+                        <li>Iniciando nos estudos de JavaScript Vanilla;</li>
+                        <li>Conhecimento avançado de HTML 5;</li>
+                        <li>Conhecimento intermediário de CSS e BootStrap;</li>
+                        <li>Utilização de softwares de controle de versionamento Git e GitHub;</li>
+                        <li>Raciocínio lógico na escrita de códigos;</li>
+                        <li>Boa comunicação;</li>
+                        <li>Focado em aprender.</li>
+                    </ul>
+                </div>
 
-                    <div class="comp">
-                        <div>
-                            <h3><b>Competências</b></h3>
-                        </div>
-                        <div>
-                            <ul>
-                                <li>Computação avançada;</li>
-                                <!-- <li>Domínio da lógica de programação;</li>-->
-                                <li>Facliidade para resolução de problemas;</li>
-                                <!--<li>Conhecimento avançado de linguagens de programação(Java,C/C++);</li>-->
-                                <!--<li>Raciocínio lógico na escrita de códigos;</li>-->
-                                <li>Boa comunicação;</li>
-                                <li>Focado em aprender.</li>
-                            </ul>
-                        </div>
-                    </div>
 
-                    <div class="exp">
-                        <div class="title exp">
-                            <h3><b>Experiência</b></h3>
-                        </div>
-                        <div class="conteudo exp">
-                            <p>Nenhuma experiênica na área em questão.
-                            </p>
 
-                        </div>
-                    </div>
-                    <div class="form">
-                        <div>
-                            <h3><b>Formação</b></h3>
-                        </div>
-                        <div>
-                            <h4><b>Universidade Vale do Cricaré - São Mateus, ES.</b></h4>
-                            <p>Tecnólogo em Análise e Desenvolvimento de Sistemas  - Cursando.
-                            </p>
-                            <h4><b>Instituto Federal do Espírito Santo - Polo Conceição da Barra, ES.<br> </b></h4>
-                            
-                            <p>Tecnólogo em <br> Sistemas para Internet - Cursando.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="obje">
-                        <div>
-                            <h3><b>Objetivo</b></h3>
-                        </div>
-                        <div>
-                            <ul>
-                                <li>Em busca do meu primeiro emprego, para adquirir conhecimento <br> e experiênica;
-                                </li>
-                                <li>Agregar valor à instituição e me dedicar aos projetos e desafios.</li>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!--<div id="difu">
+                <div>
+                    <h3><b>Experiência</b></h3>
+                </div>
+                <div class="conteudo exp">
+                    <p>Em busca da minha primeira oportunidade no mercado de trabalho como desenvolvedor.
+                    </p>
+
+                </div>
+
+
+                <div>
+                    <h3><b>Formação</b></h3>
+                </div>
+                <div>
+                    <h4><b>Universidade Vale do Cricaré - São Mateus, ES.</b></h4>
+                    <p>Tecnólogo em Análise e Desenvolvimento de Sistemas - Cursando.
+                    </p>
+                    <h4><b>Instituto Federal do Espírito Santo - Polo Conceição da Barra, ES.<br> </b></h4>
+
+                    <p>Tecnólogo em Sistemas para Internet - Cursando.
+                    </p>
+                </div>
+
+
+                <div>
+                    <h3><b>Objetivo</b></h3>
+                </div>
+                <div>
+                    <ul>
+                        <li>Usar meu conhecimento a favor da empresa, e adquirir novos conhecimentos.
+                        </li>
+                        <li>Agregar valor à instituição e me dedicar independente do projeto ou desafio.</li>
+                        </li>
+                        <li>Melhorar meu portfólio e meus projetos.</li>
+                    </ul>
+                </div>
+
+                <!--<div id="difu">
                         <h3><b>Dificuldades</b></h3>
                         <ul>
-                            <li>Minha maior dificuldade é adquirir conhecimentos mais avançados de hardware e
+                            <li>Minha divr dificuldade é adquirir conhecimentos div avançados de hardware e
                                 periféricos.
                             </li>
                         </ul>
                     </div>-->
-                </div>
             </div>
-
         </div>
-        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
