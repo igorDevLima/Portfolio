@@ -25,6 +25,14 @@ body {
     overflow-wrap: break-word;
 
 }
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+
+}
 
 a {
     font-family: 'Heebo', sans-serif;
@@ -44,6 +52,19 @@ a {
     font-family: 'Titillium Web', sans-serif;
     text-decoration: none;
 }
+
+
+
+main h3 {
+
+    width: max-content;
+    color: #ff640c;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 50px;
+
+}
+
 
 h1 {
     color: #ff640c;
@@ -285,7 +306,7 @@ main {
     background-color: #ff640c;
     width: 100%;
     height: 300px;
-    background-image: url('/house-7542049.svg');
+    background-image: url('/img/house-7542049.svg');
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center right;
@@ -407,8 +428,35 @@ main {
     background-color: rgb(0, 0, 0);
 
 }
+.portfolio img{
+    width:200px;
+    height:200px;
+    border-radius: 3%;
+    border: 1px solid #ff640c;
+    
 
-
+}
+.portfolio div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.portfolio a{
+    
+    color: #111;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+margin: 30px;
+    text-decoration: none;
+}
+.portfolio a:hover{ 
+    padding-top: 10px;
+    transition: 1s;
+    color: #ff640c;
+}
 
 
 
@@ -428,65 +476,6 @@ footer {
 
 
 
-body {
-    width: 100vw;
-    height: 100vh;
-    background-color: white;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-
-}
-
-a {
-    font-family: 'Heebo', sans-serif;
-
-    font-family: 'Josefin Sans', sans-serif;
-
-    font-family: 'Major Mono Display', monospace;
-
-    font-family: 'Manrope', sans-serif;
-
-    font-family: 'Montserrat', sans-serif;
-
-    font-family: 'Mukta', sans-serif;
-
-    font-family: 'Noto Sans', sans-serif;
-
-    font-family: 'Titillium Web', sans-serif;
-    text-decoration: none;
-}
-
-h1 {
-    color: #ff640c;
-    font-family: 'Heebo', sans-serif;
-
-    font-family: 'Major Mono Display', monospace;
-
-    font-family: 'Manrope', sans-serif;
-
-    font-family: 'Montserrat', sans-serif;
-
-    font-family: 'Mukta', sans-serif;
-
-    font-family: 'Noto Sans', sans-serif;
-
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 20px;
-
-
-    text-shadow: 0px 0px 5px #ff640c, 0px 0px 3px rgb(161, 47, 5);
-    /* text-shadow: 0 0 10px #ff640c, 0 0 40px #ff640c, 0 0 70px #ff640c;*/
-}
-
-main h3 {
-
-    width: max-content;
-    color: #ff640c;
-    font-size: 20px;
-    margin-bottom: 10px;
-    margin-top: 50px;
-
-}
 
 .curriculo {
     width: 100%;
