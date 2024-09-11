@@ -1,5 +1,5 @@
 import "./index.css";
-import { Typography } from "@mui/material";
+import Typography from "../Typography";
 import { LinkTextProps } from "./types";
 import { useNavigate } from "react-router-dom";
 

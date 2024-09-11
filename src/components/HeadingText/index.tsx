@@ -1,9 +1,9 @@
 import "./index.css";
-import { Typography } from "@mui/material";
+import Typography from "../Typography";
 import { HeadingTextProps } from "./types";
 
 function HeadingText({ variant = "h1", ...props }: HeadingTextProps) {
-  return <Typography className="heading-text" variant={variant} {...props} />;
+  return <Typography variant={variant} {...props} />;
 }
 
 export default HeadingText;

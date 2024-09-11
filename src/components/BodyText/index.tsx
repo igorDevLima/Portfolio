@@ -1,5 +1,5 @@
 import "./index.css";
-import { Typography } from "@mui/material";
+import Typography from "../Typography";
 import { BodyTextProps } from "./types";
 
 function BodyText({ variant = "body1", ...props }: BodyTextProps) {

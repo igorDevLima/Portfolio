@@ -1,5 +1,5 @@
 import "./index.css";
-import { Typography } from "@mui/material";
+import Typography from "../Typography";
 import { ButtonTextProps } from "./types";
 
 function ButtonText({ ...props }: ButtonTextProps) {

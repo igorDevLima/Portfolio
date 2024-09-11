@@ -1,5 +1,4 @@
-import "./index.css";
-import { Typography } from "@mui/material";
+import Typography from "../Typography";
 import { SubtitleTextProps } from "./types";
 
 function SubtitleText({ variant = "subtitle1", ...props }: SubtitleTextProps) {

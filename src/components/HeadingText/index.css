@@ -1,4 +1,6 @@
+.MuiTypography-h1 {
+  font-family: "Sora", sans-serif;
+}
 .heading-text {
-  font-family: "Poppins", sans-serif;
   font-weight: var(--weight-text-bold) !important;
 }
