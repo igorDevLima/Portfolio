@@ -29,16 +29,13 @@
 }
 
 body {
-  margin: 0;
   display: flex;
   place-items: center;
-  min-width: 320px;
   min-height: 100vh;
+  background: var(--color-background-default);
+  color: var(--color-text-primary);
+  overflow-x: hidden;
 }
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
 }
 
 /* Dark Mode Specific */
