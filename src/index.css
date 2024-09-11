@@ -40,6 +40,24 @@ body {
 #root {
   width: 100%;
 }
+
+.gradient-text {
+  background: var(--color-primary-main);
+  background-image: -webkit-linear-gradient(
+    45deg,
+    var(--color-primary-main) 0%,
+    var(--color-secondary-main) 50%
+  );
+
+  background-size: 100%;
+  background-repeat: repeat;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 
 /* Dark Mode Specific */
