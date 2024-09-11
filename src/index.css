@@ -36,6 +36,10 @@ body {
   color: var(--color-text-primary);
   overflow-x: hidden;
 }
+
+#root {
+  width: 100%;
+}
 }
 
 /* Dark Mode Specific */
