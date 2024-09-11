@@ -1,0 +1,32 @@
+.page-container {
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  grid-template-columns: 1fr;
+  min-height: 100vh; /* Faz com que a página ocupe 100% da altura */
+  grid-template-areas:
+    "header"
+    "appbar"
+    "content"
+    "footer";
+  gap: 3.2rem;
+  position: relative;
+}
+
+.page-container header {
+  grid-area: header;
+  padding: var(--padding-page);
+  /* Estilos adicionais para o header */
+}
+
+.page-container .page-content {
+  grid-area: content;
+  padding: var(--padding-page);
+  /* Estilos adicionais para o conteúdo da página */
+}
+
+.page-container footer {
+  grid-area: footer;
+  padding: var(--padding-page);
+  /* Estilos adicionais para o footer */
+}
