@@ -1,0 +1,4 @@
+.body-text {
+  font-family: "Merriweather", serif;
+  font-weight: var(--weight-text-regular) !important;
+}
