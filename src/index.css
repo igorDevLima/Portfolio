@@ -62,15 +62,26 @@ body[data-theme="light"] {
   --color-text-primary: #131a14;
 }
 
-@media (prefers-color-scheme: light) {
+@media screen and (min-width: 480px) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    --padding-page: 1.25rem 1.875rem;
   }
-  a:hover {
-    color: #747bff;
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --padding-page: 1.25rem 2.5rem;
   }
-  button {
-    background-color: #f9f9f9;
+}
+
+@media screen and (min-width: 1024px) {
+  :root {
+    --padding-page: 1.25rem 5rem;
+  }
+}
+
+@media screen and (min-width: 1444px) {
+  :root {
+    --padding-page: 1.25rem 6.25rem;
   }
 }
