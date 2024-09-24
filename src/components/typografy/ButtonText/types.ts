@@ -1,3 +1,3 @@
-import { TypographyBase } from "../../types";
+import { TypographyBase } from "../../../types";
 
 export interface ButtonTextProps extends TypographyBase {}
