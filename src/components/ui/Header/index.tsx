@@ -1,7 +1,7 @@
+import useUuid from "../../../hooks/useUuid";
+import LinkText from "../../typografy/LinkText";
 import "./index.css";
-import LinkText from "../LinkText";
 import { HeaderProps } from "./types";
-import useUuid from "../../hooks/useUuid";
 
 function Header({ menuItems, ...props }: HeaderProps) {
   const { uuidv4 } = useUuid();

@@ -1,12 +1,12 @@
-import HeadingText from "../HeadingText";
-import SubtitleText from "../SubtitleText";
+import HeadingText from "../../typografy/HeadingText";
 import "./index.css";
 import { FooterProps } from "./types";
 import MailIcon from "@mui/icons-material/Mail";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
-import LinkText from "../LinkText";
-import { MenuItemType } from "../../types";
-import useUuid from "../../hooks/useUuid";
+import { MenuItemType } from "../../../types";
+import useUuid from "../../../hooks/useUuid";
+import SubtitleText from "../../typografy/SubtitleText";
+import LinkText from "../../typografy/LinkText";
 
 const contactsInfo = [
   {

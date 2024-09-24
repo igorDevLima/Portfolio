@@ -1,5 +1,5 @@
 import { TypographyVariant } from "@mui/material";
-import { TypographyBase } from "../../types";
+import { TypographyBase } from "../../../types";
 
 type HeadingVariant = Extract<TypographyVariant, `h${number}`>;
 

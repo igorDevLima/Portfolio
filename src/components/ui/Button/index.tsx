@@ -1,7 +1,7 @@
 import "./index.css";
 import MuiButton from "@mui/material/Button";
 import { ButtonProps } from "./types";
-import ButtonText from "../ButtonText";
+import ButtonText from "../../typografy/ButtonText";
 
 function Button({ children, sx, ...props }: ButtonProps) {
   return (

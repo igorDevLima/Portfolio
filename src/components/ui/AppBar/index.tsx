@@ -8,10 +8,10 @@ import {
 } from "@mui/material";
 import { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
-import HeadingText from "../HeadingText";
+import HeadingText from "../../typografy/HeadingText";
 import MenuItem from "../MenuItem";
 import { AppBarProps } from "./types";
-import useUuid from "../../hooks/useUuid";
+import useUuid from "../../../hooks/useUuid";
 
 function AppBar({ menuItems, sx, ...props }: AppBarProps) {
   const { uuidv4 } = useUuid();

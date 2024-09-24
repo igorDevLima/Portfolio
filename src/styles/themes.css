@@ -1,0 +1,19 @@
+/* Dark Mode Specific */
+body[data-theme="dark"] {
+  /* Background Colors */
+  --color-background-default: #131a14;
+  --color-background-paper: #111712;
+
+  /* Text Colors */
+  --color-text-primary: #ffffff;
+}
+
+/* Light Mode Specific */
+body[data-theme="light"] {
+  /* Background Colors */
+  --color-background-default: #ffffff;
+  --color-background-paper: #111712;
+
+  /* Text Colors */
+  --color-text-primary: #131a14;
+}

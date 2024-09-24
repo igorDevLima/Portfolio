@@ -1,3 +1,5 @@
+@import url(./styles/themes.css);
+
 :root {
   /* Primary Colors (shared between light and dark) */
   --color-primary-main: #0da81d;
@@ -58,26 +60,6 @@ body {
   -moz-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
-}
-
-/* Dark Mode Specific */
-body[data-theme="dark"] {
-  /* Background Colors */
-  --color-background-default: #131a14;
-  --color-background-paper: #111712;
-
-  /* Text Colors */
-  --color-text-primary: #ffffff;
-}
-
-/* Light Mode Specific */
-body[data-theme="light"] {
-  /* Background Colors */
-  --color-background-default: #ffffff;
-  --color-background-paper: #111712;
-
-  /* Text Colors */
-  --color-text-primary: #131a14;
 }
 
 @media screen and (min-width: 480px) {

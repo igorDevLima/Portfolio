@@ -1,7 +1,7 @@
 import { MenuItem as MuiMenuItem } from "@mui/material";
 import { MenuItemProps } from "./types";
-import ButtonText from "../ButtonText";
 import { useNavigate } from "react-router-dom";
+import ButtonText from "../../typografy/ButtonText";
 
 function MenuItem({ item, ...props }: MenuItemProps) {
   const navigate = useNavigate();

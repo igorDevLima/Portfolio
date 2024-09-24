@@ -1,5 +1,5 @@
-import "./index.css";
 import Typography from "../Typography";
+import "./index.css";
 import { LinkTextProps } from "./types";
 import { useNavigate } from "react-router-dom";
 

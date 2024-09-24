@@ -1,8 +1,8 @@
-import Button from "../../components/Button";
-import HeadingText from "../../components/HeadingText";
-import BodyText from "../../components/BodyText";
-import { useTheme } from "../../hooks/useTheme";
-import SubtitleText from "../../components/SubtitleText";
+import Button from "../../components/ui/Button";
+import HeadingText from "../../components/typografy/HeadingText";
+import { useTheme } from "../../hooks/style/useTheme";
+import SubtitleText from "../../components/typografy/SubtitleText";
+import BodyText from "../../components/typografy/BodyText";
 
 function Home() {
   const { handleChangeTheme } = useTheme();
