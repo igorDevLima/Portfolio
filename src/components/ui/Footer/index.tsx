@@ -7,6 +7,7 @@ import { MenuItemType } from "../../../types";
 import useUuid from "../../../hooks/useUuid";
 import SubtitleText from "../../typografy/SubtitleText";
 import LinkText from "../../typografy/LinkText";
+import SvgLogo from "../Svg/SvgLogo";
 
 const contactsInfo = [
   {
@@ -57,7 +58,7 @@ const navLinks: MenuItemType[] = [
 ];
 
 function Footer({ ...props }: FooterProps) {
-  const {uuidv4} = useUuid();
+  const { uuidv4 } = useUuid();
 
   return (
     <footer {...props}>
@@ -75,7 +76,7 @@ function Footer({ ...props }: FooterProps) {
       </div>
       <div className="footer-content">
         <div className="contact">
-          Logo
+          <SvgLogo textColor="white" />
           {contactsInfo.map((contactInfo) => {
             const Icon = contactInfo.icon;
 
