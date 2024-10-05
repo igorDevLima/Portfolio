@@ -12,6 +12,7 @@ import HeadingText from "../../typografy/HeadingText";
 import MenuItem from "../MenuItem";
 import { AppBarProps } from "./types";
 import useUuid from "../../../hooks/useUuid";
+import SvgLogo from "../Svg/SvgLogo";
 
 function AppBar({ menuItems, sx, ...props }: AppBarProps) {
   const { uuidv4 } = useUuid();
@@ -83,7 +84,7 @@ function AppBar({ menuItems, sx, ...props }: AppBarProps) {
               textDecoration: "none",
             }}
           >
-            LOGO
+            <SvgLogo />
           </HeadingText>
         </Toolbar>
       </Container>
