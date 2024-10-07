@@ -1,5 +1,6 @@
 footer {
-  padding: 4rem inherit !important;
+  padding-top: 5rem !important;
+  padding-bottom: 2rem !important;
   background: var(--color-background-paper);
   display: flex;
   flex-direction: column;
