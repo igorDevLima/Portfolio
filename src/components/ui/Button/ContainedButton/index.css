@@ -1,4 +1,4 @@
-.button::before {
+.contained-button::before {
   content: "";
   position: absolute;
   top: 0;
@@ -11,6 +11,6 @@
   transform: scale(1) translate(5%, 10%);
 }
 
-.button:hover::before {
+.contained-button:hover::before {
   transform: scale(1.05) translate(10%, 10%);
 }
