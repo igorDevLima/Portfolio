@@ -6,6 +6,7 @@ import Section from "../../components/ui/Section";
 import DownloadIcon from "@mui/icons-material/Download";
 import LabelButton from "../../components/ui/Button/LabelButton";
 import ContainedButton from "../../components/ui/Button/ContainedButton";
+import Row from "../../components/ui/Row";
 
 function Home() {
   const { handleChangeTheme } = useTheme();
@@ -13,10 +14,12 @@ function Home() {
   return (
     <>
       <Section>
+        <Row gap={3}>
           <ContainedButton label="Click" onClick={() => handleChangeTheme()} />
           <LabelButton label="Baixe meu currículo" sx={{ gap: "1rem" }}>
             <DownloadIcon sx={{ color: "var(--color-text-primary)" }} />
           </LabelButton>
+        </Row>
         <HeadingText className="gradient-text" variant="h1">
           Vite + React
         </HeadingText>
