@@ -8,3 +8,7 @@ type MenuItemType = {
   label: string;
   href?: Pathname;
 }
+
+export interface ThemeChanger {
+  onChangeTheme: () => void
+}

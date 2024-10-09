@@ -9,8 +9,6 @@ import DownloadButton from "./components/ui/DownloadButton";
 import Column from "../../components/ui/Column";
 
 function Home() {
-  const { handleChangeTheme } = useTheme();
-
   return (
     <>
       <Section>
