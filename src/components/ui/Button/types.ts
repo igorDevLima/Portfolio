@@ -3,7 +3,7 @@ import { Without } from "../../../types";
 
 export interface ButtonProps extends MuiButtonProps {
   label?: string;
-  textColor?: string;
+  textColor?: string | "var(--color-text-primary)";
 }
 
 export interface ButtonPropsWithoutVariant

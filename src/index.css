@@ -85,3 +85,8 @@ body {
     --padding-page: 1.25rem 6.25rem;
   }
 }
+
+a{
+  color: inherit;
+  text-decoration: none;
+}

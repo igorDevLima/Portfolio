@@ -3,10 +3,9 @@ import { useTheme } from "../../hooks/style/useTheme";
 import SubtitleText from "../../components/typografy/SubtitleText";
 import BodyText from "../../components/typografy/BodyText";
 import Section from "../../components/ui/Section";
-import DownloadIcon from "@mui/icons-material/Download";
-import LabelButton from "../../components/ui/Button/LabelButton";
 import ContainedButton from "../../components/ui/Button/ContainedButton";
 import Row from "../../components/ui/Row";
+import DownloadButton from "./components/ui/DownloadButton";
 
 function Home() {
   const { handleChangeTheme } = useTheme();
@@ -16,9 +15,11 @@ function Home() {
       <Section>
         <Row gap={3}>
           <ContainedButton label="Click" onClick={() => handleChangeTheme()} />
-          <LabelButton label="Baixe meu currículo" sx={{ gap: "1rem" }}>
-            <DownloadIcon sx={{ color: "var(--color-text-primary)" }} />
-          </LabelButton>
+          <DownloadButton
+            label="Baixe meu currículo"
+            path="public\pdf\CV - Igor Lima Pereira - Fullstack.pdf"
+            textColor="var(--color-text-primary)"
+          />
         </Row>
         <HeadingText className="gradient-text" variant="h1">
           Vite + React

@@ -5,7 +5,7 @@ import ButtonText from "../../typografy/ButtonText";
 function Button({
   children,
   label,
-  textColor = "var(--color-text-primary)",
+  textColor,
   ...props
 }: ButtonProps) {
   return (
