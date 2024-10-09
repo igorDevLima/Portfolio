@@ -9,6 +9,4 @@ type MenuItemType = {
   href?: Pathname;
 }
 
-export interface ThemeChanger {
-  onChangeTheme: () => void
-}
+export type Themes = "dark" | "light"

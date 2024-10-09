@@ -1,6 +1,6 @@
 import { HTMLAttributes } from "react";
-import { MenuItemType, ThemeChanger } from "../../../types";
+import { MenuItemType } from "../../../types";
 
-export interface HeaderProps extends HTMLAttributes<HTMLDivElement>, ThemeChanger {
+export interface HeaderProps extends HTMLAttributes<HTMLDivElement> {
     menuItems?: MenuItemType[];
 }

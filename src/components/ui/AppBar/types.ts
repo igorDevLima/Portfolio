@@ -1,6 +1,6 @@
 import { AppBarProps as MuiAppBarProps } from "@mui/material";
-import { MenuItemType, ThemeChanger } from "../../../types";
+import { MenuItemType } from "../../../types";
 
-export interface AppBarProps extends MuiAppBarProps, ThemeChanger {
+export interface AppBarProps extends MuiAppBarProps {
   menuItems: MenuItemType[];
 }

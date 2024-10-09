@@ -1,20 +1,11 @@
-import { useEffect, useState } from "react";
+import { useContext } from "react";
+import { ThemeContext } from "../../contexts/ThemeContexts";
 
 export const useTheme = () => {
-  const [currentTheme, setCurrentTheme] = useState<string>(
-    window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"
-  );
-
-  const handleChangeTheme = () => {
-    setCurrentTheme(currentTheme === "dark" ? "light" : "dark");
-  };
-
-  useEffect(() => {
-    document.body.setAttribute("data-theme", currentTheme);
-  }, [currentTheme]);
+  const { toggleTheme, currentTheme } = useContext(ThemeContext);
 
   return {
     currentTheme,
-    handleChangeTheme,
+    handleChangeTheme: toggleTheme,
   };
 };

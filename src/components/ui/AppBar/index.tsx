@@ -1,8 +1,11 @@
 import { AppBar as MuiAppBar, Container } from "@mui/material";
 import { AppBarProps } from "./types";
 import Toolbar from "./Toolbar";
+import { useTheme } from "../../../hooks/style/useTheme";
 
-function AppBar({ menuItems, sx, onChangeTheme, ...props }: AppBarProps) {
+function AppBar({ menuItems, sx, ...props }: AppBarProps) {
+  const { handleChangeTheme } = useTheme();
+
   return (
     <MuiAppBar
       sx={{
@@ -13,7 +16,7 @@ function AppBar({ menuItems, sx, onChangeTheme, ...props }: AppBarProps) {
       {...props}
     >
       <Container maxWidth="xl">
-        <button onClick={onChangeTheme}>mudar tema</button>
+        <button onClick={handleChangeTheme}>mudar tema</button>
         <Toolbar menuItems={menuItems} />
       </Container>
     </MuiAppBar>
