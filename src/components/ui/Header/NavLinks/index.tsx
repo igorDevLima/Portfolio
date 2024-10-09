@@ -1,5 +1,5 @@
 import LinkText from "../../../typografy/LinkText";
-import useUuid from "../../../../hooks/useUuid";
+import useUuid from "../../../../hooks/utils/useUuid";
 import { HeaderNavLinksProps } from "./types";
 
 function HeaderNavLinks({ navLinks, ...props }: HeaderNavLinksProps) {

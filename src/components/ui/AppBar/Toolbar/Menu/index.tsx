@@ -1,7 +1,7 @@
 import { MenuProps } from "./types";
 import { Menu as MuiMenu } from "@mui/material";
 import MenuItem from "../../../MenuItem";
-import useUuid from "../../../../../hooks/useUuid";
+import useUuid from "../../../../../hooks/utils/useUuid";
 
 export default function Menu({ menuItems, sx, ...props }: MenuProps) {
   const { uuidv4 } = useUuid();

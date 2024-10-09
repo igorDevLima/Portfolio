@@ -1,7 +1,7 @@
 import "./index.css";
 import LinkText from "../../../../typografy/LinkText";
 import { FooterNavigateProps } from "./types";
-import useUuid from "../../../../../hooks/useUuid";
+import useUuid from "../../../../../hooks/utils/useUuid";
 
 function FooterNavigate({ navLinks, ...props }: FooterNavigateProps) {
   const { uuidv4 } = useUuid();
