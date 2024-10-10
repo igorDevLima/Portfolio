@@ -1,5 +1,6 @@
 import ButtonText from "../../../../../components/typografy/ButtonText";
 import Button from "../../../../../components/ui/Button";
+import Icon from "../../../../../components/ui/Icon";
 import { DownloadButtonProps } from "./types";
 import DownloadIcon from "@mui/icons-material/Download";
 
@@ -18,7 +19,7 @@ function DownloadButton({
         style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}
       >
         {label && <ButtonText sx={{ color: textColor }}>{label}</ButtonText>}
-        <DownloadIcon sx={{ color: "var(--color-text-primary)" }} />
+        <Icon iconElement={DownloadIcon} />
       </a>
     </Button>
   );
