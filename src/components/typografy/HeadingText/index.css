@@ -1,6 +1,31 @@
-.MuiTypography-h1 {
+.MuiTypography-root{
   font-family: "Sora", sans-serif;
 }
+
+.MuiTypography-h1 {
+  font-size: var(--font-size-h1) !important;
+}
+
+.MuiTypography-h2 {
+  font-size: var(--font-size-h2) !important;
+}
+
+.MuiTypography-h3 {
+  font-size: var(--font-size-h3) !important;
+}
+
+.MuiTypography-h4 {
+  font-size: var(--font-size-h4) !important;
+}
+
+.MuiTypography-h5 {
+  font-size: var(--font-size-h5) !important;
+}
+
+.MuiTypography-h6 {
+  font-size: var(--font-size-h6) !important;
+}
+
 .heading-text {
   font-weight: var(--weight-text-bold) !important;
 }

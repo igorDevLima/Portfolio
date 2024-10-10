@@ -33,13 +33,9 @@ function TextHeroSection({ ...props }: TextHeroSectionProps) {
           >
             Sou um desenvolvedor
           </HeadingText>
-          <SubtitleText
-            className="subtitle"
-            variant="subtitle1"
-            fontWeight="bold"
-          >
+            <HeadingText className="subtitle" variant="h2" fontWeight="bold">
             não apenas de código, mas também de experiências.
-          </SubtitleText>
+            </HeadingText>
           <BodyText className="hero-text">
             Desenvolvedor focado em entregar soluções ágeis e de qualidade.
             Especialista em Vite, React e arquitetura limpa, com uma abordagem
