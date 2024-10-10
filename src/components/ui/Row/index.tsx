@@ -4,7 +4,7 @@ import React from "react";
 
 function Row({ spacing, children, ...props }: RowProps) {
   return (
-    <Grid2 container rowSpacing={spacing} {...props} sx={{ width: "max-content" }}>
+    <Grid2 container rowSpacing={spacing} {...props} sx={{ width: "max-content" }} alignItems='center'>
       {React.Children.map(children, (child) => (
         <Grid2 key={child?.toString()} size={6} sx={{ width: "max-content" }}>
           {child}
