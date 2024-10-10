@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
-import { Themes } from "../types";
 import { ThemeContext } from "../contexts/ThemeContexts";
+import { Themes } from "../types/theme";
 
 export const ThemeProvider = ({
   children,

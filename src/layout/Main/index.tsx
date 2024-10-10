@@ -1,10 +1,10 @@
 import "./index.css";
 import { Outlet } from "react-router-dom";
 import Footer from "../../components/ui/Footer";
-import { MenuItemType } from "../../types";
 import AppBar from "../../components/ui/AppBar";
 import Header from "../../components/ui/Header";
 import { ThemeProvider } from "../../providers/themeProvider";
+import { MenuItemType } from "../../types/components";
 
 const menuItems: MenuItemType[] = [
   { label: "sobre", href: "/test" },

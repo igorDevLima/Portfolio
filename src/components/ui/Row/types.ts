@@ -1,6 +1,6 @@
 import { GridProps } from "@mui/material/Grid";
-import { Without } from "../../../types";
 import { GridSpacing } from "@mui/material/Grid2";
+import { Without } from "../../../types/globals";
 
 export interface RowProps
   extends Without<

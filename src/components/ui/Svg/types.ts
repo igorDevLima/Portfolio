@@ -1,5 +1,5 @@
 import React, { HTMLAttributes } from "react";
-import { Without } from "../../../types";
+import { Without } from "../../../types/globals";
 
 export interface SvgProps extends HTMLAttributes<SVGElement> {
   element: React.ReactElement;

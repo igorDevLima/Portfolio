@@ -1,0 +1,62 @@
+:root {
+    /* Primary Colors (shared between light and dark) */
+    --color-primary-main: #0da81d;
+    --color-primary-light: #0b8b18;
+    --color-primary-dark: #064f0d;
+
+    /* Secondary Colors (shared between light and dark) */
+    --color-secondary-main: #2e38ff;
+    --color-secondary-light: #9ef3f3;
+    --color-secondary-dark: #022445;
+
+    /* Text Colors (shared between light and dark) */
+    --color-text-secondary: #ffffff;
+
+    /* Font Weight */
+    --weight-text-light: 300;
+    --weight-text-regular: 400;
+    --weight-text-normal: 500;
+    --weight-text-bold: 700;
+
+    /* Padding */
+    --padding-page: 1.25rem 0.938rem;
+
+    /* Gradient */
+    --main-gradient: 45deg, var(--color-primary-main) 0%, var(--color-secondary-main) 50%;
+}
+
+@media screen and (min-width: 480px) {
+    :root {
+        --padding-page: 1.25rem 1.875rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    :root {
+        --padding-page: 1.25rem 2.5rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    :root {
+        --padding-page: 1.25rem 5rem;
+    }
+}
+
+@media screen and (min-width: 1444px) {
+    :root {
+        --padding-page: 1.25rem 6.25rem;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    :root {
+        --padding-page: 1.25rem 12rem;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    :root {
+        --padding-page: 1.25rem 20rem;
+    }
+}

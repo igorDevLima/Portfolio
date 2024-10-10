@@ -1,5 +1,5 @@
 import { ButtonProps as MuiButtonProps } from "@mui/material/Button";
-import { Without } from "../../../types";
+import { Without } from "../../../types/globals";
 
 export interface ButtonProps extends MuiButtonProps {
   label?: string;
