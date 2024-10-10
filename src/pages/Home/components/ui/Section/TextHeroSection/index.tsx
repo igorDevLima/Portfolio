@@ -4,11 +4,11 @@ import HeadingText from "../../../../../../components/typografy/HeadingText";
 import SubtitleText from "../../../../../../components/typografy/SubtitleText";
 import BodyText from "../../../../../../components/typografy/BodyText";
 import Row from "../../../../../../components/ui/Row";
-import DownloadButton from "./components/DownloadButton";
 import ContainedButton from "../../../../../../components/ui/Button/ContainedButton";
 import { TextHeroSectionProps } from "./types";
 import useFromLeftGsapAnimation from "../../../../../../hooks/animations/useFromLeftGsapAnimation";
 import useFromRightGsapAnimation from "../../../../../../hooks/animations/useFromRightGsapAnimation";
+import DownloadButton from "./components/DownloadButton";
 
 function TextHeroSection({ ...props }: TextHeroSectionProps) {
   useFromLeftGsapAnimation(
