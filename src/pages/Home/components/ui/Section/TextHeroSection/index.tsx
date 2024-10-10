@@ -1,7 +1,6 @@
 import Section from "../../../../../../components/ui/Section";
 import Column from "../../../../../../components/ui/Column";
 import HeadingText from "../../../../../../components/typografy/HeadingText";
-import SubtitleText from "../../../../../../components/typografy/SubtitleText";
 import BodyText from "../../../../../../components/typografy/BodyText";
 import Row from "../../../../../../components/ui/Row";
 import ContainedButton from "../../../../../../components/ui/Button/ContainedButton";
@@ -33,13 +32,9 @@ function TextHeroSection({ ...props }: TextHeroSectionProps) {
           >
             Sou um desenvolvedor
           </HeadingText>
-          <SubtitleText
-            className="subtitle"
-            variant="subtitle1"
-            fontWeight="bold"
-          >
+            <HeadingText className="subtitle" variant="h2" fontWeight="bold">
             não apenas de código, mas também de experiências.
-          </SubtitleText>
+            </HeadingText>
           <BodyText className="hero-text">
             Desenvolvedor focado em entregar soluções ágeis e de qualidade.
             Especialista em Vite, React e arquitetura limpa, com uma abordagem
