@@ -17,7 +17,7 @@ function FooterNavigate({ navLinks, ...props }: FooterNavigateProps) {
             fontWeight: "var(--weight-text-bold) !important",
             gap: "0.5rem",
           }}
-          href={navLink.href}
+          href={navLink.href ?? "#"}
         >
           {navLink.label}
         </LinkText>
