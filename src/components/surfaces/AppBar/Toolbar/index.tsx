@@ -1,4 +1,4 @@
-import { Box, Toolbar as MuiToolbar } from "@mui/material";
+import { Box, Toolbar as LibToolbar } from "@mui/material";
 import { ToolbarProps } from "./types";
 import { useState } from "react";
 import NavMenuButton from "./NavMenuButton";
@@ -17,7 +17,7 @@ function Toolbar({ menuItems, ...props }: ToolbarProps) {
   };
 
   return (
-    <MuiToolbar disableGutters {...props}>
+    <LibToolbar disableGutters {...props}>
       <Box sx={{ flexGrow: 1 }}>
         <NavMenuButton onClick={handleOpenNavMenu} />
         <Menu
@@ -28,7 +28,7 @@ function Toolbar({ menuItems, ...props }: ToolbarProps) {
         />
       </Box>
       <SvgLogo />
-    </MuiToolbar>
+    </LibToolbar>
   );
 }
 

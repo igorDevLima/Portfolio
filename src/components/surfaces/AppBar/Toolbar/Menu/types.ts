@@ -1,6 +1,6 @@
-import { MenuProps as MuiMenuProps } from "@mui/material";
+import { MenuProps as LibMenuProps } from "@mui/material";
 import { ToolbarProps } from "../types";
 
 export interface MenuProps
-  extends MuiMenuProps,
+  extends LibMenuProps,
     Pick<ToolbarProps, "menuItems"> {}
