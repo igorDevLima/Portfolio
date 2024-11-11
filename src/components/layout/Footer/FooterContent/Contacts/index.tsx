@@ -1,8 +1,8 @@
 import "./index.css";
 import { FooterContactsProps } from "./types";
 import LinkText from "../../../../typografy/LinkText";
-import SvgLogo from "../../../Svg/SvgLogo";
 import useUuid from "../../../../../hooks/utils/useUuid";
+import SvgLogo from "../../../../data-display/Svg/SvgLogo";
 
 function FooterContacts({ contactsInfo, ...props }: FooterContactsProps) {
   const { uuidv4 } = useUuid();

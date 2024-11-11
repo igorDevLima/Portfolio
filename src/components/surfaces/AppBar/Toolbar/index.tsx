@@ -1,9 +1,9 @@
 import { Box, Toolbar as MuiToolbar } from "@mui/material";
-import SvgLogo from "../../Svg/SvgLogo";
 import { ToolbarProps } from "./types";
 import { useState } from "react";
 import NavMenuButton from "./NavMenuButton";
 import Menu from "./Menu";
+import SvgLogo from "../../../data-display/Svg/SvgLogo";
 
 function Toolbar({ menuItems, ...props }: ToolbarProps) {
   const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null);

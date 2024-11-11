@@ -1,6 +1,6 @@
+import Icon from "../../../../../../../../components/data-display/Icon";
+import Button from "../../../../../../../../components/inputs/Button";
 import ButtonText from "../../../../../../../../components/typografy/ButtonText";
-import Button from "../../../../../../../../components/ui/Button";
-import Icon from "../../../../../../../../components/ui/Icon";
 import { DownloadButtonProps } from "./types";
 import DownloadIcon from "@mui/icons-material/Download";
 

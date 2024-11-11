@@ -3,7 +3,7 @@ import { ChangeThemeButtonProps } from "./types";
 import WbSunnyIcon from "@mui/icons-material/WbSunny";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 import { useTheme } from "../../../../hooks/style/useTheme";
-import Icon from "../../Icon";
+import Icon from "../../../data-display/Icon";
 
 function ChangeThemeButton({ children, ...props }: ChangeThemeButtonProps) {
   const { currentTheme } = useTheme();

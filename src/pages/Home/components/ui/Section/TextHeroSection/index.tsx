@@ -1,13 +1,13 @@
-import Section from "../../../../../../components/ui/Section";
-import Column from "../../../../../../components/ui/Column";
 import HeadingText from "../../../../../../components/typografy/HeadingText";
 import BodyText from "../../../../../../components/typografy/BodyText";
-import Row from "../../../../../../components/ui/Row";
-import ContainedButton from "../../../../../../components/ui/Button/ContainedButton";
 import { TextHeroSectionProps } from "./types";
 import useFromLeftGsapAnimation from "../../../../../../hooks/animations/useFromLeftGsapAnimation";
 import useFromRightGsapAnimation from "../../../../../../hooks/animations/useFromRightGsapAnimation";
 import DownloadButton from "./components/DownloadButton";
+import Section from "../../../../../../components/layout/Section";
+import Column from "../../../../../../components/layout/Column";
+import Row from "../../../../../../components/layout/Row";
+import ContainedButton from "../../../../../../components/inputs/Button/ContainedButton";
 
 function TextHeroSection({ ...props }: TextHeroSectionProps) {
   useFromLeftGsapAnimation(

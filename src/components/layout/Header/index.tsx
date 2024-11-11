@@ -1,7 +1,7 @@
 import { useTheme } from "../../../hooks/style/useTheme";
-import ChangeThemeButton from "../Button/ChangeThemeButton";
+import SvgLogo from "../../data-display/Svg/SvgLogo";
+import ChangeThemeButton from "../../inputs/Button/ChangeThemeButton";
 import Row from "../Row";
-import SvgLogo from "../Svg/SvgLogo";
 import "./index.css";
 import HeaderNavLinks from "./NavLinks";
 import { HeaderProps } from "./types";
