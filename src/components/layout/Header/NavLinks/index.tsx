@@ -10,7 +10,7 @@ function HeaderNavLinks({ navLinks, ...props }: HeaderNavLinksProps) {
       {navLinks?.map((navLink) => (
         <LinkText
           key={uuidv4()}
-          href={navLink.href}
+          href={navLink.href ?? "#"}
           sx={{
             textTransform: "capitalize",
             fontWeight: "var(--weight-text-bold) !important",
